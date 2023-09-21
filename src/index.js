@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 require('dotenv').config();
 
-const misRutas = require('./rutas/terremoto')
+const misRutas = require('./rutas/empleados')
 
 
 

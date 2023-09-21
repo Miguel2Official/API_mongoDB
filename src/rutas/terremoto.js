@@ -13,7 +13,7 @@ rutas.post('/terremoto' , (req, res)  => {
  })
 
 
- rutas.get('/terremoto' , (req, res)  => {
+ rutas.get('/empleados' , (req, res)  => {
     estructura
     .find()
     .then((datos)=> {res.json(datos)})

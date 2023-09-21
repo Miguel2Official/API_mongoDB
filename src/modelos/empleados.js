@@ -1,22 +1,18 @@
-const mongoose = require('mongoose');
+const { Schema, model } = require("mongoose");
 
-const estructuraEMP = mongoose.Schema({
-    nombre: {
-        type: String,
-        
-    },
-    edad: {
-        type: Number,
-        
-    },
-    cedula: {
-        type: String,
-        
-    },
-    direccion: {
-        type: String,
-        
-    }
-})
+const estructuraEMP = Schema({
+  nombre: {
+    type: String,
+  },
+  edad: {
+    type: Number,
+  },
+  cedula: {
+    type: String,
+  },
+  direccion: {
+    type: String,
+  },
+});
 
-module.exports = mongoose.model('empleado', estructuraEMP);
+module.exports = model("empleado", estructuraEMP);
