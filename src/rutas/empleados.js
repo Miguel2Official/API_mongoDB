@@ -21,8 +21,8 @@ rutas.post('/empleado' , (req, res)  => {
 rutas.get('/empleado' , (req, res)  => {
    estructura
    .find()
-   .then((datos)=> {res.json(datos)})
-   .catch((error) => res.json({message: error}) )
+   // .then((datos)=> {res.json(datos)})
+   // .catch((error) => res.json({message: error}) )
 })
 
 // metodo get para encontrar por parametros
